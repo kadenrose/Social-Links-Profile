@@ -1,0 +1,97 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+- Green: hsl(75, 94%, 57%)
+
+- White: hsl(0, 0%, 100%)
+
+- Grey 700: hsl(0, 0%, 20%)
+- Grey 800: hsl(0, 0%, 12%)
+- Grey 900: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a basic design system to help you build a more accurate solution faster. */
+/*               CSS BY KADEN ROSE                                     */
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    --font-size-p: 14px;
+    /* --fontFamily: ;  */
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--grey-900);
+}
+
+body {
+    color: var(--white);
+    /* font-family: var(--fontFamily); */
+}
+
+body > section {
+    display: flex;
+    background-color: var(--grey-800);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 300px;
+}
+
+img {
+    border-radius: 50%;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: var(--green);
+}
+
+li a {
+    background-color: var(--grey-700);
+    color: var(--white);
+}
+
+a:hover {
+    background-color: var(--green);
+    color: var(--grey-800);
+}
+
+.attribution a:visited{
+    color: var(--white);
+}
+
+.attribution a:hover {
+    color: var(--grey-900);
+}
