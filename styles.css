@@ -64,7 +64,8 @@ body > section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 300px;
+    padding: 30px;
+    border-radius: 14px;
 }
 
 img {
@@ -79,19 +80,38 @@ p {
 }
 
 li a {
-    background-color: var(--grey-700);
     color: var(--white);
+    text-decoration: none;
+}
+
+li {
+    width: 100%;
+    list-style-type: none;
+    background-color: var(--grey-700);
+    line-height: 1.5;
+    padding: 14px;
+    border-radius: 14px;
+}
+
+li:hover {
+    background-color: var(--green);
+    color: var(--grey-800);
 }
 
 a:hover {
-    background-color: var(--green);
     color: var(--grey-800);
+    background-color: var(--green);
 }
 
 .attribution a:visited{
     color: var(--white);
 }
 
+.attribution {
+    padding-top: 14px;
+}
+
 .attribution a:hover {
     color: var(--grey-900);
+    text-decoration: none;
 }
