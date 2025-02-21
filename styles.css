@@ -32,6 +32,8 @@ The designs were created to the following widths:
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a basic design system to help you build a more accurate solution faster. */
 /*               CSS BY KADEN ROSE                                     */
+@import url('https://fonts.google.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 
 :root {
     --green: hsl(75, 94%, 57%);
@@ -41,7 +43,7 @@ The designs were created to the following widths:
     --grey-900: hsl(0, 0%, 8%);
 
     --font-size-p: 14px;
-    /* --fontFamily: ;  */
+    --fontFamily: 'Inter', sans-serif; 
 }
 
 html {
@@ -55,7 +57,7 @@ html {
 
 body {
     color: var(--white);
-    /* font-family: var(--fontFamily); */
+    font-family: var(--fontFamily);
 }
 
 body > section {
@@ -77,30 +79,56 @@ img {
 
 p {
     color: var(--green);
+    padding-bottom: 14px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+small {
+    padding-bottom: 14px;
+}
+
+h1 {
+    font-weight: 500;
 }
 
 li a {
     color: var(--white);
     text-decoration: none;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 li {
-    width: 100%;
-    list-style-type: none;
+    width: 200%;
     background-color: var(--grey-700);
     line-height: 1.5;
     padding: 14px;
-    border-radius: 14px;
+    margin: 8px 0;
+    border-radius: 12px;
+    text-align: center;
 }
+
 
 li:hover {
     background-color: var(--green);
     color: var(--grey-800);
 }
 
-a:hover {
+li a:hover {
     color: var(--grey-800);
-    background-color: var(--green);
 }
 
 .attribution a:visited{
@@ -111,7 +139,11 @@ a:hover {
     padding-top: 14px;
 }
 
+.attribution a{
+    text-decoration: none;
+}
+
 .attribution a:hover {
-    color: var(--grey-900);
+    color: var(--green);
     text-decoration: none;
 }
